@@ -20,7 +20,6 @@ contract Voting {
         storage.activate_at_block.initialize(context.block_number() as u32); // Intended to be only called once.
     }
 
-
     // 1. Everyone with an Aztec account gets a vote
     // 2. They can only vote once in this contract
     // 3. Who they are is private, but their actual vote is not
